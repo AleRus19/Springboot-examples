@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Bulma!</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/home">
+				<h2 class="title">Web Notes</h2>
+			</a> <a role="button" class="navbar-burger" aria-label="menu"
+				aria-expanded="false" data-target="navbarBasicExample"> <span
+				aria-hidden="true"></span> <span aria-hidden="true"></span> <span
+				aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item"> Home </a> <a class="navbar-item">
+					Documentation </a>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link"> More </a>
+
+					<div class="navbar-dropdown">
+						<a class="navbar-item"> About </a> <a class="navbar-item">
+							Jobs </a> <a class="navbar-item"> Contact </a>
+						<hr class="navbar-divider">
+						<a class="navbar-item"> Report an issue </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="buttons">
+						<a class="button is-primary"> <strong>Sign up</strong>
+						</a> <a class="button is-light"> Log in </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<section class="section">
+		<div class="columns">
+			<div class="column is-two-fifths">
+				<div class="columns">
+					<div class="column is-full">
+						<form method="POST">
+							<div class="field">
+								<label class="label">Name</label>
+								<div class="control">
+									<input class="input" name="folderName" type="text" placeholder="Text input">
+								</div>
+							</div>
+							<div class="field is-grouped">
+								<div class="control">
+									<button class="button is-link">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+		
+				<div class="columns is-full">
+					<div class="columns is-full">
+						<nav class="panel">
+							<p class="panel-heading">Folders</p>
+							<a class="panel-block is-active"> <span class="panel-icon">
+									<i class="fas fa-book" aria-hidden="true"></i>
+							</span> bulma
+							</a>
+							<a class="panel-block is-active"> <span class="panel-icon">
+									<i class="fas fa-book" aria-hidden="true"></i>
+							</span> bulma
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="column">Auto</div>
+			<div class="column">Auto</div>
+		</div>
+	</section>
+</body>
+</html>
